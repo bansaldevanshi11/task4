@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - LearnHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">📚 LearnHub</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="progress.html">My Progress</a></li>
+        </ul>
+        <div class="user-menu">
+            <span>👤 Student</span>
+        </div>
+    </nav>
+
+    <!-- Course Page Header -->
+    <section class="page-header">
+        <h1>All Courses</h1>
+        <p>Browse our collection of expert-led courses</p>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <select id="category">
+            <option value="">All Categories</option>
+            <option value="web">Web Development</option>
+            <option value="design">Design</option>
+            <option value="mobile">Mobile Development</option>
+        </select>
+        <select id="level">
+            <option value="">All Levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+        <input type="text" placeholder="🔍 Search courses..." id="search">
+    </section>
+
+    <!-- Course List -->
+    <section class="course-list">
+        <div class="course-card horizontal">
+            <div class="course-image">💻</div>
+            <div class="course-content">
+                <h3>Web Development Bootcamp</h3>
+                <p class="instructor">By John Smith</p>
+                <p class="description">Learn HTML, CSS, JavaScript, and more. Build real-world projects from scratch.</p>
+                <div class="course-meta">
+                    <span>⭐ 4.8</span>
+                    <span>📚 42 lessons</span>
+                    <span>⏱️ 20 hours</span>
+                    <span class="level beginner">Beginner</span>
+                </div>
+                <div class="course-price">
+                    <span class="price">$49.99</span>
+                </div>
+            </div>
+            <a href="#" class="btn primary" onclick="enrollCourse('Web Development')">Enroll</a>
+        </div>
+
+        <div class="course-card horizontal">
+            <div class="course-image">🎨</div>
+            <div class="course-content">
+                <h3>UI/UX Design Masterclass</h3>
+                <p class="instructor">By Sarah Johnson</p>
+                <p class="description">Master Figma, design principles, and create stunning user interfaces.</p>
+                <div class="course-meta">
+                    <span>⭐ 4.9</span>
+                    <span>📚 35 lessons</span>
+                    <span>⏱️ 15 hours</span>
+                    <span class="level intermediate">Intermediate</span>
+                </div>
+                <div class="course-price">
+                    <span class="price">$39.99</span>
+                </div>
+            </div>
+            <a href="#" class="btn primary" onclick="enrollCourse('UI/UX Design')">Enroll</a>
+        </div>
+
+        <div class="course-card horizontal">
+            <div class="course-image">📱</div>
+            <div class="course-content">
+                <h3>React Native Essentials</h3>
+                <p class="instructor">By Mike Chen</p>
+                <p class="description">Build cross-platform mobile apps with React Native and JavaScript.</p>
+                <div class="course-meta">
+                    <span>⭐ 4.7</span>
+                    <span>📚 28 lessons</span>
+                    <span>⏱️ 12 hours</span>
+                    <span class="level intermediate">Intermediate</span>
+                </div>
+                <div class="course-price">
+                    <span class="price">$34.99</span>
+                </div>
+            </div>
+            <a href="#" class="btn primary" onclick="enrollCourse('React Native')">Enroll</a>
+        </div>
+
+        <div class="course-card horizontal">
+            <div class="course-image">🐍</div>
+            <div class="course-content">
+                <h3>Python for Beginners</h3>
+                <p class="instructor">By Emily Davis</p>
+                <p class="description">Start your programming journey with Python. No prior experience needed.</p>
+                <div class="course-meta">
+                    <span>⭐ 4.6</span>
+                    <span>📚 50 lessons</span>
+                    <span>⏱️ 25 hours</span>
+                    <span class="level beginner">Beginner</span>
+                </div>
+                <div class="course-price">
+                    <span class="price">$29.99</span>
+                </div>
+            </div>
+            <a href="#" class="btn primary" onclick="enrollCourse('Python')">Enroll</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 LearnHub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
